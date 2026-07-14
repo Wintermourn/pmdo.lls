@@ -18,7 +18,7 @@ RogueEssence = {}
 ---@field Mods RogueEssence.ModHeader[]
 RogueEssence.PathMod = {}
 
----@enum RogueEssence.PathMod.ModType
+---@class RogueEssence.PathMod.ModType
 RogueEssence.PathMod.ModType = {
     None = -1,
     Mod = 0,
@@ -40,6 +40,7 @@ RogueEssence.PathMod.ModType = {
 ---@field IsFilled fun(self: RogueEssence.ModHeader): boolean
 local cls = {}
 
+---@class static.RogueEssence.ModHeader
 ---@overload fun(path: string, name: string, author: string, description: string, namespace: string, uuid: System.Guid, version: System.Version, gameVersion: System.Version, modType: RogueEssence.PathMod.ModType, relationships: System.Array<RogueEssence.RelatedMod>): RogueEssence.ModHeader
 RogueEssence.ModHeader = {}
 ---@type RogueEssence.ModHeader
@@ -51,5 +52,8 @@ RogueEssence.ModHeader.Invalid = ({
     Namespace = ""
 })
 
----@class RogueEssence.RelatedMod
+---@class static.RogueEssence.RelatedMod
 RogueEssence.RelatedMod = {}
+
+
+---@class RogueEssence.RelatedMod

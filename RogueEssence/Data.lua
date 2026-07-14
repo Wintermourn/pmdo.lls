@@ -3,16 +3,17 @@
 ---@class RogueEssence.Data
 local _dat = {}
 
----@class RogueEssence.Data.MonsterData
+---@class static.RogueEssence.Data.MonsterData
 _dat.MonsterData = {}
 
----@class static<RogueEssence.Data.DataManager> : RogueEssence.Data.DataManager
+---@class static.RogueEssence.Data.DataManager
 ---@field DATA_PATH string
 ---@field MISC_PATH string
 ---@field SAVE_PATH string
 ---@field MAP_FOLDER string
 _dat.DataManager = {}
 
+---@class static.RogueEssence.Data.DataType
 _dat.DataManager.DataType = {
     --[[@type RogueEssence.Data.DataManager.DataType]] None = 0,
     --[[@type RogueEssence.Data.DataManager.DataType]] Monster = 1,
@@ -35,6 +36,6 @@ _dat.DataManager.DataType = {
     --[[@type RogueEssence.Data.DataManager.DataType]] All = 131071,
 }
 
+---@class RogueEssence.Data.MonsterData
 ---@class RogueEssence.Data.DataManager
-
 ---@class RogueEssence.Data.DataManager.DataType

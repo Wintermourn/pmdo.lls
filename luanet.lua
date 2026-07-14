@@ -14,6 +14,7 @@ function luanet.import_type(s) end
 ---@return Object?
 ---@overload fun(s: "System"): System
 ---@overload fun(s: "System.IO"): System.IO
+---@overload fun(s: "RogueElements"): RogueElements
 ---@overload fun(s: "RogueEssence"): RogueEssence
 ---@overload fun(s: "RogueEssence.Data"): RogueEssence.Data
 function luanet.namespace(s) end
