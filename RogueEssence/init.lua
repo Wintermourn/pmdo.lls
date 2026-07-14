@@ -3,9 +3,6 @@
 ---@class RogueEssence
 RogueEssence = {}
 
----@type RogueEssence.Data
-RogueEssence.Data = {}
-
 ---@class RogueEssence.PathMod
 ---@field APP_PATH string Path to game's directory containing saves, mods, logs, and configs.
 ---@field DEV_PATH string Path to the game's "RawAsset" folder with a trailing slash. Can be replaced via launch argument!
