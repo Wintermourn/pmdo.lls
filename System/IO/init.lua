@@ -1,6 +1,6 @@
 ---@meta
 
----@class System.IO
+---@class namespace.System.IO
 local IO = {}
 
 ---@class System.IO.Path
@@ -36,9 +36,8 @@ IO.File = {}
 ---@field CreateDirectory fun(path: string)
 IO.Directory = {}
 
+---@class System.IO.SearchOption
 IO.SearchOption = {
     --[[@type System.IO.SearchOption]] AllDirectories = {},
     --[[@type System.IO.SearchOption]] TopDirectoryOnly = {}
 }
-
----@class System.IO.SearchOption

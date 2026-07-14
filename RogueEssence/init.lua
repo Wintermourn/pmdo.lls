@@ -20,11 +20,24 @@ RogueEssence.PathMod = {}
 
 ---@class RogueEssence.PathMod.ModType
 RogueEssence.PathMod.ModType = {
-    None = -1,
-    Mod = 0,
-    Quest = 1,
-    Count = 2
+    --[[@type RogueEssence.PathMod.ModType]] None = -1,
+    --[[@type RogueEssence.PathMod.ModType]] Mod = 0,
+    --[[@type RogueEssence.PathMod.ModType]] Quest = 1,
+    --[[@type RogueEssence.PathMod.ModType]] Count = 2
 }
+
+---@class RogueEssence.ModHeader
+---@overload fun(path: string, name: string, author: string, description: string, namespace: string, uuid: System.Guid, version: System.Version, gameVersion: System.Version, modType: RogueEssence.PathMod.ModType, relationships: System.Array<RogueEssence.RelatedMod>): RogueEssence.ModHeader
+RogueEssence.ModHeader = {}
+
+---@type RogueEssence.ModHeader
+RogueEssence.ModHeader.Invalid = ({
+    Name = "",
+    Path = "",
+    Author = "",
+    Description = "",
+    Namespace = ""
+})
 
 ---@class RogueEssence.ModHeader
 ---@field Path string Path to a mod's base folder. Typically starts with `PathMod.MODS_FOLDER`.
@@ -38,22 +51,6 @@ RogueEssence.PathMod.ModType = {
 ---@field ModType RogueEssence.PathMod.ModType
 ---@field Relationships System.Array<RogueEssence.RelatedMod>
 ---@field IsFilled fun(self: RogueEssence.ModHeader): boolean
-local cls = {}
-
----@class static.RogueEssence.ModHeader
----@overload fun(path: string, name: string, author: string, description: string, namespace: string, uuid: System.Guid, version: System.Version, gameVersion: System.Version, modType: RogueEssence.PathMod.ModType, relationships: System.Array<RogueEssence.RelatedMod>): RogueEssence.ModHeader
-RogueEssence.ModHeader = {}
----@type RogueEssence.ModHeader
-RogueEssence.ModHeader.Invalid = ({
-    Name = "",
-    Path = "",
-    Author = "",
-    Description = "",
-    Namespace = ""
-})
-
----@class static.RogueEssence.RelatedMod
-RogueEssence.RelatedMod = {}
-
 
 ---@class RogueEssence.RelatedMod
+RogueEssence.RelatedMod = {}

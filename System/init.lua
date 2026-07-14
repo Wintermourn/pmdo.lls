@@ -4,6 +4,7 @@
 local System = {
 }
 
+---@class System.StringComparison
 System.StringComparison = {
 	--[[@type System.StringComparison]] CurrentCulture = 0,
 	--[[@type System.StringComparison]] CurrentCultureIgnoreCase = 1,
@@ -12,8 +13,6 @@ System.StringComparison = {
 	--[[@type System.StringComparison]] Ordinal = 4,
 	--[[@type System.StringComparison]] OrdinalIgnoreCase = 5
 }
-
----@class System.StringComparison
 
 ---@alias Array System.Array
 ---@class System.Array<T> : {[integer]: T, Length: integer}
@@ -47,8 +46,6 @@ System.StringComparison = {
 ---@field BinarySearch fun(array: System.Array, value: T?): integer
 ---@field BinarySearch fun(array: System.Array, index: integer, length: integer, value: T?): integer
 ---@field CopyTo fun(self: self, array: System.Array, index: integer)
-
----@type NLua.ProxyType<System.Array>
 System.Array = {}
 
 ---@class System.Version

@@ -6,7 +6,7 @@ local _scr = {}
 ---@class RogueEssence.Script.LuaEngine
 _scr.LuaEngine = {}
 
----@class static.RogueEssence.Script.LuaEngine.EServiceEvents
+---@class RogueEssence.Script.LuaEngine.EServiceEvents
 --- Events fired by PMDO - useful for Services.
 _scr.LuaEngine.EServiceEvents = {
     --[[@type RogueEssence.Script.LuaEngine.EServiceEvents]] Init = 0,
@@ -47,5 +47,3 @@ _scr.LuaEngine.EServiceEvents = {
     --[[@type RogueEssence.Script.LuaEngine.EServiceEvents]] _NBEvents = 28
 }
 EngineServiceEvents = _scr.LuaEngine.EServiceEvents
-
----@class RogueEssence.Script.LuaEngine.EServiceEvents
