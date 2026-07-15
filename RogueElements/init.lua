@@ -1,6 +1,6 @@
 ---@meta
 
----@class namespace.RogueElements
+---@class RogueElements
 RogueElements = {}
 
 ---@class RogueElements.Rect

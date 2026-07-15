@@ -1,6 +1,6 @@
 ---@meta
 
----@class namespace.System.IO
+---@class System.IO
 local IO = {}
 
 ---@class System.IO.Path
