@@ -22,18 +22,18 @@ function luanet.import_type(s) end
 function luanet.namespace(s) end
 
 ---@generic T
----@param t NLua.ProxyType<`T`>
+---@param t NLua.ProxyType<T>
 ---@return System.Type<T>
 function luanet.ctype(t) end
 
 ---Returns an iterator that loops over all entries in a List or Array.
 ---@generic T
----@param o System.Collections.Generic.List<`T`>|System.Array<`T`>|userdata
+---@param o System.Collections.Generic.List<T>|System.Array<T>|userdata
 ---@return fun(): T?
 function luanet.each(o) end
 
 ---@generic T
----@param type NLua.ProxyType<`T`>
+---@param type NLua.ProxyType<T>
 ---@param table T[]
 ---@return System.Array<T>
 function luanet.make_array(type, table) end
